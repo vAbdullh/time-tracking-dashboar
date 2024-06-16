@@ -4,6 +4,10 @@
 
 This project is a challenge from [Frontend Mentor](https://www.frontendmentor.io), where I built a dashboard for time tracking.
 
+## Visit
+
+Explore the live dashboard: [View Demo](https://vabdullh.github.io/time-tracking-dashboard/dist/)
+
 ## Technologies Used
 
 - **Tailwind CSS**: Used exclusively for styling, providing a new approach with utility-first CSS.
