@@ -5,8 +5,7 @@
 This project is a challenge from [Frontend Mentor](https://www.frontendmentor.io), where I built a dashboard for time tracking.
 
 ## Visit
-
-Explore the live dashboard: [View Demo](https://vabdullh.github.io/time-tracking-dashboard/dist/)
+[View Demo](https://vabdullh.github.io/time-tracking-dashboard/dist/)
 
 ## Technologies Used
 
