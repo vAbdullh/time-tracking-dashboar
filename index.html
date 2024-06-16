@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="box-border">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body
+  class="max-w-screen bg-very-dark-blue overflow-x-hidden font-['Rubik', sans-serif] z-[-4] relative w-screen h-screen grid place-items-center">
+  <main class="w-screen md:w-[768px] grid justify-items-center md:grid-cols-2 content-center py-[40px] xl:h-[600px] container mx-auto relative z-[-4] gap-64px xl:gap-y-10 gap-x-0
+    xl:w-[1110px] xl:grid-cols-4 xl:grid-rows-2 xl:items-end ">
+    <!-- # profile container -->
+    <section class="bg-primary w-[325px] md:w-[714px] xl:w-[255px] h-[135px] xl:h-[350px] rounded-lg md:col-start-1 md:col-end-3 relative flex flex-row xl:flex-col xl:items-start xl:justify-evenly  [20px] items-center mb-[85px] md:mb-[80px]
+      xl:row-span-2 xl:col-start-1 xl:col-end-2 xl:self-start">
+      <div
+        class=" absolute bg-dark-blue z-[-1] w-[325px] md:w-[714px] xl:w-[255px] h-[85px] xl:h-[180px] -bottom-[75px] xl:-bottom-[170px] rounded-lg">
+        <nav class="w-full">
+          <ul
+            class="capitalize text-pale-blue flex flex-row xl:flex-col justify-center items-center gap-[50px] xl:gap-[25px] h-[85px] xl:h-[165px]">
+            <li class="">
+              <button id="daily" class="cursor-pointer nav-btn">Daily</button>
+            </li>
+            <li class="">
+              <button id="weekly" class="text-active cursor-pointer nav-btn">Weekly</button>
+            </li>
+            <li class="">
+              <button id="monthly" class="cursor-pointer nav-btn">Monthly</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <img src="./images/image-jeremy.png" alt="profile image"
+        class="w-[64px] h-[64px] xl:h-[77px] xl:w-[77px] rounded-full border-2 border-white ml-[20px] xl:ml-[30px]">
+      <div class="ml-[15px] xl:ml-[35px]">
+        <p class="text-pale-blue xl:text-xl">Report for</p>
+        <h1 class="capitalize text-white text-2xl xl:text-5xl">Jeremy robson</h1>
+      </div>
+    </section>
+    <!-- # work cantainer -->
+    <section class="bg-dark-blue w-[325px] h-[135px] rounded-lg relative flex items-center justify-center
+    xl:h-[200px] xl:w-[255px]">
+      <div
+        class="absolute flex justify-end bg-light-red-work z-[-1] w-[325px] xl:w-[255px] h-[80px] -top-[40px] rounded-lg">
+        <img src="./images/icon-work.svg" alt="" class="h-full">
+      </div>
+      <!--  flex flex-row items-between justify-between mx-auto -->
+      <div class="w-[280px] xl:px-[30px]">
+        <div class="flex flex-row justify-between w-full">
+          <h2 class="capitalize text-white text-[18px] font-medium">work</h2>
+          <button class="h-[27px] cursor-pointer my-auto">
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </button>
+        </div>
+        <div class="flex flex-row xl:flex-col xl:items-start items-end justify-between">
+          <p class="text-white text-4xl"><span id="workCurrent">32</span>hrs</p>
+          <p class="text-pale-blue">last week - <span id="workPrevious">36</span>hrs</p>
+        </div>
+      </div>
+    </section>
+    <!-- #play container -->
+
+    <section class="bg-dark-blue w-[325px] h-[135px] rounded-lg relative flex items-center justify-center
+  xl:h-[200px] xl:w-[255px]">
+      <div
+        class="absolute flex justify-end bg-soft-blue-play z-[-1] w-[325px] xl:w-[255px] h-[80px] -top-[40px] rounded-lg">
+        <img src="./images/icon-play.svg" alt="" class="h-full">
+      </div>
+      <!--  flex flex-row items-between justify-between mx-auto -->
+      <div class="w-[280px] xl:px-[30px]">
+        <div class="flex flex-row justify-between w-full">
+          <h2 class="capitalize text-white text-[18px] font-medium">play</h2>
+          <button class="h-[27px] cursor-pointer my-auto">
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </button>
+        </div>
+        <div class="flex flex-row xl:flex-col xl:items-start items-end justify-between">
+          <p class="text-white text-4xl"><span id="playCurrent">10</span>hrs</p>
+          <p class="text-pale-blue">last week - <span id="playPrevious">8</span>hrs</p>
+        </div>
+      </div>
+    </section>
+    <!-- # study container -->
+    <section class="bg-dark-blue w-[325px] h-[135px] rounded-lg relative flex items-center justify-center
+  xl:h-[200px] xl:w-[255px]">
+      <div
+        class="absolute flex justify-end bg-light-red-study z-[-1] w-[325px] xl:w-[255px] h-[80px] -top-[40px] rounded-lg">
+        <img src="./images/icon-study.svg" alt="" class="h-full">
+      </div>
+      <!--  flex flex-row items-between justify-between mx-auto -->
+      <div class="w-[280px] xl:px-[30px]">
+        <div class="flex flex-row justify-between w-full">
+          <h2 class="capitalize text-white text-[18px] font-medium">study</h2>
+          <button class="h-[27px] cursor-pointer my-auto">
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </button>
+        </div>
+        <div class="flex flex-row xl:flex-col xl:items-start items-end justify-between">
+          <p class="text-white text-4xl"><span id="studyCurrent">4</span>hrs</p>
+          <p class="text-pale-blue">last week - <span id="studyPrevious">7</span>hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- # Exercise container -->
+    <section class="bg-dark-blue w-[325px] h-[135px] rounded-lg relative flex items-center justify-center
+  xl:h-[200px] xl:w-[255px]">
+      <div
+        class="absolute flex justify-end bg-lime-green-exercise z-[-1] w-[325px] xl:w-[255px] h-[80px] -top-[40px] rounded-lg">
+        <img src="./images/icon-exercise.svg" alt="" class="h-full">
+      </div>
+      <!--  flex flex-row items-between justify-between mx-auto -->
+      <div class="w-[280px] xl:px-[30px]">
+        <div class="flex flex-row justify-between w-full">
+          <h2 class="capitalize text-white text-[18px] font-medium">Exercise</h2>
+          <button class="h-[27px] cursor-pointer my-auto">
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </button>
+        </div>
+        <div class="flex flex-row xl:flex-col xl:items-start items-end justify-between">
+          <p class="text-white text-4xl"><span id="exerciseCurrent">4</span>hrs</p>
+          <p class="text-pale-blue">last week - <span id="exercisePrevious">5</span>hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- # social container -->
+    <section class="bg-dark-blue w-[325px] h-[135px] rounded-lg relative flex items-center justify-center
+  xl:h-[200px] xl:w-[255px]">
+      <div
+        class="absolute flex justify-end bg-violet-social z-[-1] w-[325px] xl:w-[255px] h-[80px] -top-[40px] rounded-lg">
+        <img src="./images/icon-social.svg" alt="" class="h-full">
+      </div>
+      <!--  flex flex-row items-between justify-between mx-auto -->
+      <div class="w-[280px] xl:px-[30px]">
+        <div class="flex flex-row justify-between w-full">
+          <h2 class="capitalize text-white text-[18px] font-medium">social</h2>
+          <button class="h-[27px] cursor-pointer my-auto">
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </button>
+        </div>
+        <div class="flex flex-row xl:flex-col xl:items-start items-end justify-between">
+          <p class="text-white text-4xl"><span id="socialCurrent">5</span>hrs</p>
+          <p class="text-pale-blue">last week - <span id="socialPrevious">10</span>hrs</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- # self care container -->
+    <section class="bg-dark-blue w-[325px] h-[135px] rounded-lg relative flex items-center justify-center
+  xl:h-[200px] xl:w-[255px]">
+      <div
+        class="absolute flex justify-end bg-soft-orange-self-care z-[-1] w-[325px] xl:w-[255px] h-[80px] -top-[40px] rounded-lg">
+        <img src="./images/icon-self-care.svg" alt="" class="h-full">
+      </div>
+      <!--  flex flex-row items-between justify-between mx-auto -->
+      <div class="w-[280px] xl:px-[30px]">
+        <div class="flex flex-row justify-between w-full">
+          <h2 class="capitalize text-white text-[18px] font-medium">self care</h2>
+          <button class="h-[27px] cursor-pointer my-auto">
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </button>
+        </div>
+        <div class="flex flex-row xl:flex-col xl:items-start items-end justify-between">
+          <p class="text-white text-4xl"><span id="selfCareCurrent">2</span>hrs</p>
+          <p class="text-pale-blue">last week - <span id="selfCarePrevious">2</span>hrs</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="pb-10 text-white text-[10px] md:text-2xl">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline">Frontend
+      Mentor</a>.
+    Coded by <a href="https://github.com/vAbdullh" class="underline">Abdullah</a>.
+  </footer>
+  <script src="./src/main.ts" type="module"></script>
+</body>
+
+</html>
